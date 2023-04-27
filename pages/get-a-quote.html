@@ -136,7 +136,6 @@ function gtagCustom(eventName, param) {
 
 	</head>
 	<body>
-    	
         <style>
         @font-face {
         font-family: kiaSignature;
@@ -145,7 +144,7 @@ function gtagCustom(eventName, param) {
     body{
         font-family: kiaSignature,"kiaSignature";
     }
-        </style>	
+        </style>
 	<a id="skipnav" class="skipnav" href="#main">Skip Navigation</a>
 	<header id="header" class="header ">
         <div class="header-pad">
@@ -177,7 +176,7 @@ function gtagCustom(eventName, param) {
         <div id="gnb" class="gnb">
             <ul class="gnb-list">
                 <li class="gnb-item tier-dealership">
-                    <a href="./pages/our-dealership.html" class="gnb-a ">
+                    <a href="./our-dealership.html" class="gnb-a ">
                         <span class="text">About</span>
                     </a>
                 </li>
@@ -189,27 +188,27 @@ function gtagCustom(eventName, param) {
                             <div class="d2-pad">
                                 <ul class="d2-list">
                                     <li class="d2 ">
-                                        <a href="./showrooms/Carens/showroom.html" class="d2-a ">
+                                        <a href="../carens.html" class="d2-a ">
                                            <span class="text">CARENS</span>
                                         </a>
                                     </li>
                                     
                                     <li class="d2 ">
-                                        <a href="./car/car.html" class="d2-a ">
+                                        <a href="../seltos.html" class="d2-a ">
                                            <span class="text">SELTOS</span>
                                         </a>
                                     </li>
                                 
                                     <li class="d2 ">
                                      
-                                        <a href="./showrooms/sonet/showroom.html" class="d2-a ">
+                                        <a href="../sonet.html" class="d2-a ">
                                            <span class="text">SONET</span>
                                         </a>
                                     </li>
                                 
                                     <li class="d2 ">
                                      
-                                        <a href="./showrooms/carnival/showroom.html" class="d2-a ">
+                                        <a href="../carnival.html" class="d2-a ">
                                            <span class="text">CARNIVAL</span>
                                         </a>
                                     </li>
@@ -222,18 +221,12 @@ function gtagCustom(eventName, param) {
                 
                 
                     <li class="gnb-item tier-tools has-d2 align-left">
-                        <a href="#" class="gnb-a ">
+                        <a href="./test-drive.html" class="gnb-a ">
                             <span class="text">Shopping Tools</span>
                         </a>
                         <div class="d2-box">
                             <div class="d2-pad">
                                 <ul class="d2-list">
-                                    <li class="d2 ">
-                                     
-                                        <a href="#" class="d2-a ">
-                                           <span class="text">EMI Calculator</span>
-                                        </a>
-                                    </li>
                                 
                                     <li class="d2 ">
                                      
@@ -251,7 +244,7 @@ function gtagCustom(eventName, param) {
                                 
                                     <li class="d2 ">
                                      
-                                        <a href="./pages/test-drive.html" class="d2-a ">
+                                        <a href="../pages/test-drive.html" class="d2-a ">
                                            <span class="text">Test Drive</span>
                                         </a>
                                     </li>
@@ -264,7 +257,7 @@ function gtagCustom(eventName, param) {
     <!-- /*        <sly data-sly-test=" Village Motipura, Himatnagar, District Sabarkantha"> */-->
                 <div class="gnb-side-wrap">
                     <div class="gnb-side">
-                            <a href="#" class="gnb-a">
+                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726800.7033883063!2d68.21214136886105!3d24.190880837846343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8560e24c9bf7%3A0xb891e2ae77511b23!2sWestcoast%20Kia%20-%20IIM%20Road%20Panjrapole%20-%20Kia%20Showroom!5e0!3m2!1sen!2s!4v1674666003559!5m2!1sen!2shttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726800.7033883063!2d68.21214136886105!3d24.190880837846343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8560e24c9bf7%3A0xb891e2ae77511b23!2sWestcoast%20Kia%20-%20IIM%20Road%20Panjrapole%20-%20Kia%20Showroom!5e0!3m2!1sen!2s!4v1674666003559!5m2!1sen!2s" class="gnb-a">
                                 <span >
                                     <i class="fa-solid fa-location-dot"></i>
                                 </span>
@@ -314,6 +307,11 @@ function gtagCustom(eventName, param) {
 			                    <div class="quote-select select mt-xl">
 			                        <label for="select-model" class="select-label mb-lg fz-md"><b>Choose Your Kia</b></label>
 			                        <select name="modelCode" id="select-model" onchange="selCar()" class="selectmenu checkValid">
+                                        <option selected disabled value="">Model</option>
+										<option value="seltos">Seltos</option>
+										<option value="sonet">Sonet</option>
+										<option value="carens">Carens</option>
+										<option value="carnival">Carnival</option>
 			                        </select>
                                         <script>
 											function selCar(){
@@ -337,23 +335,27 @@ function gtagCustom(eventName, param) {
 				                <span class="select select--underline">
 				                    <label for="select-state" class="select-label">Select a State</label>
 				                    <select id="select-state" class="selectmenu" name="state">
+                                        <option value="gujarat" selected>Gujarat</option>
 				                    </select>
 				                </span>
 				            </div>
 			                <div class="form-item form-col-half">
-			                    <span class="select select--underline is-disabled">
+			                    <span class="select select--underline ">
 			                        <label for="select-city" class="select-label">Select a City</label>
-			                        <select id="select-city" class="selectmenu" name="city" disabled>
+			                        <select id="select-city" class="selectmenu" name="city" >
+                                        <option value="ahmedabad">Ahmedabad</option>
+											<option value="gandhinagar">Gandhinagar</option>
+											<option value="himmatnagar">Himmatnagar</option>
 			                        </select>
 			                    </span>
 			                </div>
-	  		                <div class="form-item form-col-half">
+	  		                <!-- <div class="form-item form-col-half">
 			                    <span class="select select--underline is-disabled">
 			                        <label for="select-dealer" class="select-label">Select a Dealer</label>
 			                        <select id="select-dealer" class="selectmenu" name="dealer" disabled>
 			                        </select>
 			                    </span>
-		                    </div>
+		                    </div> -->
 		                </div>
 		            </fieldset>
 		            <fieldset class="fieldset mt-xl">
@@ -406,7 +408,7 @@ function gtagCustom(eventName, param) {
 							       <span class="label-text">Email</span>
 							   </label>
 							</div>
-							<div class="form-item">
+							<!-- <div class="form-item">
 							    <span class="radio-group-title">Contact Method</span>
 			                    	<input type="hidden" name="contactMethod" value="M"/>
 	                    	
@@ -418,15 +420,15 @@ function gtagCustom(eventName, param) {
 								        <input type="radio" name="contactMethodRadio" id="contact-method-email" value="E"/>
 								        <span class="label-text">Email</span>
 							        </label>
-						    </div>
-						    <div class="form-item mt-lg">
+						    </div> -->
+						    <!-- <div class="form-item mt-lg">
 						        <p>
 							        <label for="chk-0" class="checkbox">
 							            <input type="checkbox" id="chk-0" name="checkPolicy" value="Y"/>
 							            <span class="label-text">I accept the <a href="javascript:void(0);" class="link-blank" data-call-modal="modal_terms">Terms &amp; Conditions</a> and <a href="javascript:void(0);" class="link-blank" data-call-modal="modal_privacy">Privacy Policy</a>.</span>
 							        </label>
 						        </p>
-						    </div>
+						    </div> -->
 							
 	 <!-- Read and submit UTM parameters -->
 	                            <input type="hidden" name="utm_source" value=""/>
@@ -437,7 +439,7 @@ function gtagCustom(eventName, param) {
 					    </div>
 		            </fieldset>
 					<div class="func mt-lg">
-					    <button id="btnSubmit" type="submit" class="btn" disabled>Request</button>
+					    <button id="btnSubmit" type="submit" class="btn" >Request</button>
 					</div>
 		        <!-- // ## content end ## -->
 		        </div>
@@ -966,131 +968,169 @@ Creation date: 07/22/2020
 
     </section>
 </main>
-
-
-
-	    
-	<footer id="footer" class="footer">
-	    <div class="l-wrap">
-	        <div class="row">
-		        <div class="col-sm-1 col-md-2 col-lg-10">
-		            <a href="https://west-coast.in.kia/home.html" class="ci">
-			            <span class="a11y">Kia Motors</span>
-				        <svg data-name="Kia" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 34" width="68" height="34" class="svg-ci">
-				                           <path d="M39.4,23.11c0,0.12,0.04,0.2,0.11,0.2c0.05,0,0.1-0.02,0.16-0.06L60.65,9.62c0.37-0.24,0.71-0.37,1.21-0.37
-	h4.61c0.71,0,1.18,0.47,1.18,1.18v8.8c0,1.06-0.24,1.68-1.18,2.25l-5.59,3.36c-0.07,0.05-0.13,0.07-0.19,0.07
-	c-0.07,0-0.13-0.05-0.13-0.24l0-10.28c0-0.11-0.04-0.2-0.11-0.2c-0.05,0-0.1,0.02-0.16,0.06l-15.34,9.96
-	c-0.43,0.28-0.78,0.36-1.18,0.36H33.61c-0.71,0-1.18-0.47-1.18-1.18V10.71c0-0.09-0.04-0.18-0.11-0.18c-0.05,0-0.1,0.02-0.16,0.06
-	l-10.11,6.08c-0.1,0.06-0.13,0.11-0.13,0.16c0,0.04,0.02,0.08,0.09,0.16l7.22,7.22c0.1,0.1,0.16,0.17,0.16,0.25
-	c0,0.09-0.11,0.12-0.23,0.12l-6.54,0c-0.51,0-0.91-0.08-1.18-0.35l-4.38-4.38c-0.04-0.04-0.08-0.07-0.13-0.07
-	c-0.04,0-0.09,0.02-0.14,0.05l-7.33,4.4c-0.44,0.27-0.75,0.35-1.18,0.35H1.53c-0.71,0-1.18-0.47-1.18-1.18v-8.64
-	c0-1.06,0.24-1.67,1.18-2.24l5.63-3.38C7.21,9.1,7.26,9.09,7.31,9.09c0.09,0,0.13,0.09,0.13,0.28v11.55c0,0.12,0.03,0.18,0.11,0.18
-	c0.05,0,0.1-0.03,0.17-0.07L26.73,9.61c0.45-0.27,0.73-0.35,1.25-0.35h10.23c0.71,0,1.18,0.47,1.18,1.18V23.11z"/>
-				        </svg>
-		            </a>
-		        </div>
-	        </div>
-	        <div class="nav">
-			    <h3 class="a11y">Site Map</h3>
-		        <div class="row">
-		            <div class="col-lg-4">
-						<ul class="main-link-list">
-							<li class="main-link-item">
-							    <a href="https://west-coast.in.kia/our-dealership.html" class="main-link">Our Dealership</a>
-							</li>
-							<li class="main-link-item">
-							    <a href="https://west-coast.in.kia/our-vehicles/seltos/showroom.html" class="main-link">SELTOS</a>
-							</li>
-							<li class="main-link-item">
-							    <a href="https://west-coast.in.kia/shopping-tools.html" class="main-link">Shopping Tools</a>
-							</li>
-							<li class="main-link-item">
-							    <a href="https://west-coast.in.kia/servicing-warranty.html" class="main-link">Service</a>
-							</li>
-							<li class="main-link-item">
-							    <a href="https://west-coast.in.kia/dealership-promotion.html" class="main-link"></a>
-							</li>              
-						</ul>
-						<div class="social">
-							<h4 class="a11y">KIA Social Media Links</h4>
-							
-						</div>
-					</div>
-					
-						
-					
-						
-					
-						<div class="col-lg-3 footerlistcount">
-							<div class="d1-div d1-div--tools">
-								<h4 class="d1">
-								    <a href="https://west-coast.in.kia/shopping-tools.html" class="d1-a">Shopping Tools</a>
-								</h4>
-								<ul class="d2-list">
-									<li class="d2">
-										<a href="https://west-coast.in.kia/shopping-tools/emi-calculator.html" class="d2-a link link--nav">
-										    <span class="text">EMI Calculator</span>
-										</a>
-									</li>
-								
-									<li class="d2">
-										<a href="https://west-coast.in.kia/shopping-tools/get-a-quote.html" class="d2-a link link--nav">
-										    <span class="text">Get a Quote</span>
-										</a>
-									</li>
-								
-									<li class="d2">
-										<a href="https://west-coast.in.kia/shopping-tools/download-brochure.html" class="d2-a link link--nav">
-										    <span class="text">Download Brochure</span>
-										</a>
-									</li>
-								
-									<li class="d2">
-										<a href="https://west-coast.in.kia/shopping-tools/test-drive.html" class="d2-a link link--nav">
-										    <span class="text">Test Drive</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					
-						<div class="col-lg-2 footerlistcount2">
-							<div class="d1-div d1-div--service">
-								<h4 class="d1">
-								    <a href="https://west-coast.in.kia/service.html" class="d1-a">Owners</a>
-								</h4>
-								
-							</div>
-						</div>
-					
+<!-- FOOTER -->
+<footer id="footer" class="footer">
+    <div class="l-wrap">
+        <div class="row">
+            <div class="col-sm-1 col-md-2 col-lg-10">
+                <a href="./index.html" class="ci">
+                    <span class="a11y">Kia Motors</span>
+                    <svg data-name="Kia" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 34" width="68" height="34" class="svg-ci">
+                                       <path d="M39.4,23.11c0,0.12,0.04,0.2,0.11,0.2c0.05,0,0.1-0.02,0.16-0.06L60.65,9.62c0.37-0.24,0.71-0.37,1.21-0.37
+h4.61c0.71,0,1.18,0.47,1.18,1.18v8.8c0,1.06-0.24,1.68-1.18,2.25l-5.59,3.36c-0.07,0.05-0.13,0.07-0.19,0.07
+c-0.07,0-0.13-0.05-0.13-0.24l0-10.28c0-0.11-0.04-0.2-0.11-0.2c-0.05,0-0.1,0.02-0.16,0.06l-15.34,9.96
+c-0.43,0.28-0.78,0.36-1.18,0.36H33.61c-0.71,0-1.18-0.47-1.18-1.18V10.71c0-0.09-0.04-0.18-0.11-0.18c-0.05,0-0.1,0.02-0.16,0.06
+l-10.11,6.08c-0.1,0.06-0.13,0.11-0.13,0.16c0,0.04,0.02,0.08,0.09,0.16l7.22,7.22c0.1,0.1,0.16,0.17,0.16,0.25
+c0,0.09-0.11,0.12-0.23,0.12l-6.54,0c-0.51,0-0.91-0.08-1.18-0.35l-4.38-4.38c-0.04-0.04-0.08-0.07-0.13-0.07
+c-0.04,0-0.09,0.02-0.14,0.05l-7.33,4.4c-0.44,0.27-0.75,0.35-1.18,0.35H1.53c-0.71,0-1.18-0.47-1.18-1.18v-8.64
+c0-1.06,0.24-1.67,1.18-2.24l5.63-3.38C7.21,9.1,7.26,9.09,7.31,9.09c0.09,0,0.13,0.09,0.13,0.28v11.55c0,0.12,0.03,0.18,0.11,0.18
+c0.05,0,0.1-0.03,0.17-0.07L26.73,9.61c0.45-0.27,0.73-0.35,1.25-0.35h10.23c0.71,0,1.18,0.47,1.18,1.18V23.11z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="nav">
+            <h3 class="a11y">Site Map</h3>
+            <div class="row">
+                <div class="col-lg-4">
+                    <ul class="main-link-list">
+                        <li class="main-link-item">
+                            <a href="./our-dealership.html" class="main-link">ABOUT US</a>
+                        </li>
+                        <li class="main-link-item">
+                            <a href="./test-drive.html" class="main-link">TEST DRIVE</a>
+                        </li>
+                        <li class="main-link-item">
+                            <a href="#" class="main-link">CONTACT US</a>
+                        </li>              
+                    </ul>
+                    <div class="social"
+                    >
+                    <a href="https://www.facebook.com/Westcoast-Kia-Ahmedabad-100238421837984">
+                        <img width="27px" src="../images/fb.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/westcoastkia/">
+                            <img width="27px" src="../images/int.png" alt="">
+                    </a>
+                    </div>
                 </div>
-	        </div>
-			<div aria-label="Breadcrumb" class="breadcrumb">
-				<ol class="breadcrumb-list">
-					<li class="breadcrumb-item">
-						<a href="https://west-coast.in.kia/home.html" class="breadcrumb-link home">
-						    <span class="text">Home</span>
-						</a>
-					</li>
-				
-					<li class="breadcrumb-item">
-						<a href="https://west-coast.in.kia/shopping-tools.html" class="breadcrumb-link tier">
-						    <span class="text">Shopping Tools</span>
-						</a>
-					</li>
-				
-					<li class="breadcrumb-item">
-						<a href="https://west-coast.in.kia/shopping-tools/get-a-quote.html" class="breadcrumb-link tier" aria-current="page">
-						    <span class="text">Get a Quote</span>
-						</a>
-					</li>
-				</ol>
-			</div>
-			<div class="bottom-wrap">
-	           <p class="copyright">2021 Kia India Pvt. Limited. <br />    All rights reserved.</p>
-           </div>
-	    </div>
-	</footer>
+                <style>
+                    .social_ico i{
+                        padding: 10px;
+                        font-size: 18px;
+                    }
+                      @media all and (min-width: 320px) and (max-width: 767px) {
+                    .footer .d1-a:after {
+                        content: url('./images/down.png') !important;
+                        font-family: "Font Awesome 6 free"; 
+                        font-weight: 400;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+}}
+                </style>
+                    <div class="col-lg-4 footerlistcount">
+                        <div class="d1-div d1-div--tools">
+                            <h4 class="d1">
+                                <a href="#" class="d1-a">Cars</a>
+                            </h4>
+                            <ul class="d2-list">
+                                <li class="d2">
+                                    <a href="../seltos.html" class="d2-a link link--nav" >
+                                        <span class="text">SELTOS</span>
+                                    </a>
+                                </li>
+                                <li class="d2">
+                                    <a href="../carnival.html" class="d2-a link link--nav" >
+                                        <span class="text">CARNIVAL</span>
+                                    </a>
+                                </li>
+                                <li class="d2">
+                                    <a href="../sonet.html" class="d2-a link link--nav" >
+                                        <span class="text">SONET</span>
+                                    </a>
+                                </li>
+                                <li class="d2">
+                                    <a href="../carens.html" class="d2-a link link--nav" >
+                                        <span class="text">CARENS</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-2">
+                        
+                        <div class="footer_3">
+                            <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                            <div class="form-group_footer">
+                               <input type="email" name="email" id="email" placeholder="your@email.com" class="w-full bg-transparent py-3 pl-5 pr-20 border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50" required />
+                               <button type="button">OO</button>
+                            </div>
+                        </div>
+                    </div> -->
+                        <style>
+                            .social i{
+                                padding: 0px 10px 0px 10px;
+                            }
+                            
+.footer_3 h4 {
+color: #ffff;
+}
+
+.form-group_footer {
+display: flex;
+padding: 15px 0 0 0;
+}
+
+.form-group_footer input {
+border: 1px solid #FFFFFF;
+color: #fff !important;
+background: none;
+padding: 0 0 0px 10px;
+width: 100%;
+}
+.form-group_footer input::placeholder{
+color: #f7f7f7;
+}
+.form-group_footer button {
+padding: 10px 0 10px 0;
+margin: 0 0 0 0;
+width: 74px;
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+font-size: 18px;
+line-height: 22px;
+color: #05141F;
+}
+
+                        </style>
+                    
+                    <div class="col-lg-4 footerlistcount2">
+                        <div class="d1-div d1-div--service">
+                            <h4 class="d1">
+                                <a href="./test-drive.html" class="">
+                                    <br>
+                                    Shivalik Plaza, B-G 01-02, IIM Rd, Panjrapole, Ambawadi, Ahmedabad, Gujarat
+380015
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div aria-label="Breadcrumb" class="breadcrumb">
+            <ol class="breadcrumb-list">
+                <li>
+                    <p style="color: #707071;"
+                    >Designed and Developed By The Grey Metaphor</p>
+                </li>
+            </ol>
+        </div>
+        <div class="bottom-wrap" style="text-align: center;">
+           <p class="copyright">2022 West Coast Kia. All Rights Reserved.</p>
+       </div>
+    </div>
+</footer>
+
 <script>
   $(document).ready(function() {
       if("mobile" == (WizardjinDevice.type)) {
@@ -1115,44 +1155,36 @@ Creation date: 07/22/2020
   });
 </script>
 
-	    
-	
-		<div id="floating-contact" class="contact">
-		    
-				<div class="item item-top">
-		            
-					    <span class="location-h fz-lg">West Coast</span>
-					
-					
-					    <span class="location fz-sm color--light"> Village Motipura, Himatnagar, District Sabarkantha</span>
-					
-				</div>
-			
-			
-				<div class="item item-bottom">
-					<a href="tel://-" class="call">
-						<div class="call-inner">
-						    <b class="call-h fz-md">Service</b>
-						    <small class="call-num color--gray">-</small>
-						</div>
-					</a>
-					<a href="tel://9099033395" class="call">
-	                    <div class="call-inner">
-	                        <b class="call-h fz-md">Sales</b>
-	                        <small class="call-num color--gray">9099033395</small>
-	                    </div>
-	                </a>
-				</div>
-			
-		</div>
-	
+<style>
+    .vis{ display: block; }
+.novis{ display: none; }
 
-	</div>
+.disabled {
+pointer-events:none; 
+opacity:0.3;         
+}
+.ui-selectmenu-icon:after{
+content: url('../images/down.png') !important;
+font-family: "Font Awesome 6 free";
+font-weight: 400;
+text-rendering: auto;
+font-size: 12px !important;
+-webkit-font-smoothing: antialiased;
+}
+.ui-menu .ui-menu-item{
+list-style-image: none !important;
+}
+.checkbox [type=checkbox]+.label-text:after{
+content: url('../images/stop.png') !important;
+}
+    </style>
+	
+		
 <!-- 	<sly data-sly-include="partials/cookie.html" data-sly-unwrap/> -->
 	
 
 <script src="https://west-coast.in.kia/etc.clientlibs/kia2/clientlibs/in/clientlib-basepage/resources/js/modal.js"></script> 
-	<script src="https://west-coast.in.kia/etc.clientlibs/kia2/clientlibs/in/clientlib-basepage/resources/anchors-js/trigger.js"></script>
+<script src="https://west-coast.in.kia/etc.clientlibs/kia2/clientlibs/in/clientlib-basepage/resources/anchors-js/trigger.js"></script>
 
 	    
 	</body>
